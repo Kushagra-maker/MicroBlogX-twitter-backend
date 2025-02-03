@@ -5,15 +5,15 @@ const likeSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
     },
-    onModel:{ // tells what type of thing the "Like" is for
+    onModel:{ 
         type: String,
-        required: true, // a like cannot exist without tweet
-        enum : ["Tweet", "Comment"] // If you try to save anything else, like "User" or "Post", it will throw an error.
+        required: true, 
+        enum : ["Tweet", "Comment"] 
     },
-    likeable :{ // This is the actual thing that was liked (e.g., the specific Tweet or Comment).
+    likeable :{ 
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        refPath: 'onModel' //  Dynamic reference based on `onModel`. If onModel is "Tweet", it will look for this ID in the Tweet collection.
+        refPath: 'onModel' 
     }
     
 })

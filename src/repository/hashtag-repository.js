@@ -2,24 +2,24 @@ import Hashtag from "../models/hashtag.js";
 
 import { CrudRepository } from "../repository/index.js";
 
-class HashtagRepository extends CrudRepository{  //HashtagRepository is inheriting everything from CrudRepository
+class HashtagRepository extends CrudRepository{  
 
     constructor(){
-        super(Hashtag) //call the constructor of the parent class (CrudRepository in this case). You're passing the Hashtag model to the parent class's constructor
+        super(Hashtag) 
     }
 
-//hashtag single create
-    // async create(data)
-    // {
-    //     try{
-    //         let hashtag = await Hashtag.create(data);
-    //         return hashtag;
-    //     }
-    //     catch(error){
-    //         console.log(error);
-    //         throw error;
-    //     }
-    // }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
     async bulkCreate (data){
@@ -37,8 +37,8 @@ class HashtagRepository extends CrudRepository{  //HashtagRepository is inheriti
     {
         try{
             let hashtag = await Hashtag.find({
-                text: { $in: texts } // This method expects text to be a single string. To handle an array, you might want to change it to use the $in operator.
-                // text : text,
+                text: { $in: texts } 
+                
             });
             return hashtag;
         }

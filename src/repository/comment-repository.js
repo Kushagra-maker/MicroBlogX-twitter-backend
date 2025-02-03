@@ -8,7 +8,7 @@ class CommentRepository extends CrudRepository {
 
   async getComment(id) {
     try {
-      //return await Comment.findById(id).populate("user", "name");
+      
       return await Comment.findById(id).populate("user", "name").populate("commentable", "content");
     } catch (error) {
       throw error;

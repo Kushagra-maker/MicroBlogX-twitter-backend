@@ -19,9 +19,9 @@ async signIn(data) {
     try {
         const email = data.email;
         const currentPassword = data.password;
-      const user = await this.userRepository.findBy({email: email}) // you're creating an object with a property named email and assigning it the value of the email variable that you pass in as an argument.
+      const user = await this.userRepository.findBy({email: email}) 
       
-    //   console.log(user);
+    
 
       if (!user) {
         throw {

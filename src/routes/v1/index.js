@@ -11,7 +11,7 @@ const router = express.Router()
 
 router.post('/tweet',createTweet)
 
-router.get('/tweet/:id', getTweet) //:id is a route parameter. Whatever value you provide in place of :id in the URL will be captured and made available in the req.params object inside the route handler.
+router.get('/tweet/:id', getTweet) 
 
 router.post("/signUp", signUp);
 

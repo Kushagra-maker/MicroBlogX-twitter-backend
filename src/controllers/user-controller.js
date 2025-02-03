@@ -5,7 +5,7 @@ const userService = new UserService();
 export const signUp = async ( req,res ) => {
     try{
         const data = req.body;
-        // console.log(data)
+        
         const response = await userService.signUp(data);
 
         return res.status(201).json({
@@ -33,7 +33,7 @@ export const signIn = async ( req,res ) => {
     
     try{
         const data = req.body;
-        // console.log(data)
+        
         const response = await userService.signIn(data);
 
         return res.status(201).json({
