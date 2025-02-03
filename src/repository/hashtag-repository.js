@@ -8,20 +8,6 @@ class HashtagRepository extends CrudRepository{
         super(Hashtag) 
     }
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
     async bulkCreate (data){
         try{
             const tags = await Hashtag.insertMany(data);

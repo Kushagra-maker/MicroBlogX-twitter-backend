@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import JWT from "passport-jwt"; 
 import User from "../models/user.js";
 import passport from "passport";

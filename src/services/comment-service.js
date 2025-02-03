@@ -43,14 +43,6 @@ class CommentService {
 
       console.log(newComment instanceof mongoose.Document);
 
-
-      
-      
-      
-
-      
-
-
       return { success: true, message: "Comment added", data: newComment };
     } catch (error) {
       return { success: false, message: error.message, data: null };
