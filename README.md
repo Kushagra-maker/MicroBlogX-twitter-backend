@@ -1,8 +1,8 @@
-# Twitter App Backend
+# MicroBlogX - Scalable Twitter-like Backend
 
 ## Overview
 
-Welcome to the Twitter App Backend, a social media backend built using Node.js and MongoDB. This backend mimics core functionalities of Twitter, enabling users to interact with posts (tweets), comment, like, and upload media. The backend leverages JSON Web Tokens (JWT) for authentication and integrates with Amazon S3 for image uploads, ensuring secure and efficient handling of media.
+Welcome to MicroBlogX, a social media backend built using Node.js and MongoDB. This backend mimics core functionalities of Twitter, enabling users to interact with posts (tweets), comment, like, and upload media. The backend leverages JSON Web Tokens (JWT) for authentication and integrates with Amazon S3 for image uploads, ensuring secure and efficient handling of media.
 
 The app supports core features such as:
 
